@@ -78,15 +78,12 @@ def main():
     # Список поставщиков с минимальной ценой детали в каждом отделе, отсортированный по минимальной цене
     res2_unsorted = []
     for s in suppliers:
-        # Детали этого поставщика
         s_details = list(filter(lambda i: i[2] == s.name, one_to_many))
         if len(s_details) > 0:
-            # Цены деталей
             s_prices = [price for _, price, _ in s_details]
             min_price = min(s_prices)
             res2_unsorted.append((s.name, min_price))
 
-    # Сортировка по минимальной цене
     res2 = sorted(res2_unsorted, key=itemgetter(1))
     print(res2)
 
