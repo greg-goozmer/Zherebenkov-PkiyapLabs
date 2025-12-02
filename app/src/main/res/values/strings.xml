@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GIF API</string>
+    <string name="app_bar_title">GIF API</string>
+    <string name="loading_images">Загрузка изображений...</string>
+    <string name="error_unknown">Произошла ошибка</string>
+    <string name="error_no_api_key">API ключ не настроен. Проверьте local.properties</string>
+    <string name="error_no_internet">Нет подключения к интернету</string>
+    <string name="error_loading">Ошибка загрузки</string>
+    <string name="retry_button">Повторить попытку</string>
+    <string name="load_more_button">Загрузить больше</string>
+    <string name="image_without_title">Без названия</string>
+    <string name="toast_image">Изображение №%d: %s</string>
+</resources>
